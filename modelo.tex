@@ -1,0 +1,191 @@
+\documentclass[a4paper, 12pt]{article}
+% Pré ambulo
+\usepackage[utf8]{inputenc}         % Codificação UTF-8
+\usepackage[T1]{fontenc}            % Fonte com suporte a acentos
+\usepackage[brazil]{babel}          % Idioma em português do Brasil
+\usepackage{geometry}               % Controle das margens
+\usepackage{graphicx}               % Inclusão de imagens
+\usepackage{amsmath, amssymb, amsthm, amsfonts} % Pacotes matemáticos
+\usepackage{indentfirst}            % Indenta o primeiro parágrafo
+\usepackage{multicol}               % Multicolunas
+\usepackage{lipsum}                 % Texto de preenchimento
+\usepackage{subcaption}             % Subfiguras
+\usepackage{tocloft}                % Configuração de sumário
+\usepackage{setspace}               % Controle de espaçamento entre linhas
+\usepackage{sectsty}                % Controle do tamanho da fonte das seções/subseções 
+\usepackage{cite}                   % Para formatação básica de citações
+\usepackage[alf]{abntex2cite}       % Pacote para seguir as normas ABNT
+
+% Configurações adicionais
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Pontinhos no sumário
+\geometry{a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm} % Margens ABNT
+\setlength{\parindent}{1.25cm}      % Tamanho da indentação
+\setlength{\parskip}{0pt}           % Sem espaço entre parágrafos
+\onehalfspacing                      % Espaçamento 1,5 linha (norma ABNT)
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+\renewcommand{\normalsize}{\fontsize{12}{15}\selectfont}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+\begin{document}
+%\maketitle
+
+\begin{titlepage}
+	\begin{center}
+	   \begin{center}
+    \includegraphics[width=0.2\textwidth]{imagens/UEMALOGO.png}
+    \hfill
+    \includegraphics[width=0.2\textwidth]{imagens/CNPQLOGO.png}
+    \hfill
+    \includegraphics[width=0.2\textwidth]{imagens/FAPEMALOGO.png}
+    \hfill
+    \includegraphics[width=0.2\textwidth]{imagens/PIBITILOGO.png}
+\end{center}
+
+        {\textbf{PROGRAMA INSTITUCIONAL DE BOLSAS DE INICIAÇÃO EM
+DESENVOLVIMENTO TECNOLÓGICO E INOVAÇÃO
+PIBITI-CNPQ/UEMA/FAPEMA}}\\
+\vspace{15pt}
+		{\textbf{Relatório }}\\ 
+		\vspace{15pt}
+        \vspace{95pt}
+        \begin{flushleft}
+                    Projeto de Pesquisa: \textbf{TÍTULO DO PROJETO DE PESQUISA}\\
+                    \vspace{15pt}
+                    Plano de Trabalho: \textbf{TÍTULO DO PLANO DE TRABALHO}
+        \end{flushleft}
+		%\title{{\large{Título}}}
+		\vspace{3,5cm}
+	\end{center}
+	
+	\begin{flushleft}
+	    			Bolsista: \textbf{AUTOR}\\
+            \vspace{15pt}
+			Orientador: Profº. \textbf{ORIENTADOR}\\
+	\end{flushleft}
+
+		
+
+	\vspace{1cm}
+	
+	\begin{center}
+		\vspace{\fill}
+			 São Luís - MA\\
+		 2025
+			\end{center}
+\end{titlepage}
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\newpage
+\pagenumbering{arabic}
+\section*{Resumo}
+\addcontentsline{toc}{section}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt iaculis venenatis. Praesent arcu arcu, malesuada eu hendrerit eu, scelerisque in nibh. Proin massa ex, tempor et gravida ut, rhoncus sit amet augue. Aliquam non orci malesuada, dignissim neque et, dictum lectus. Mauris elementum neque vehicula metus imperdiet interdum. Duis in orci mattis, tincidunt tortor in, gravida arcu. Cras vitae dignissim tellus. Praesent rhoncus, nisl non venenatis tincidunt, urna ipsum accumsan ipsum, nec pellentesque nisi metus gravida odio. Duis malesuada leo vitae aliquet lobortis. Nam luctus lectus quis augue commodo facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar accumsan dignissim. Integer vel lorem tortor. Aenean at augue posuere, sagittis erat et, auctor est. Etiam accumsan massa mauris, at convallis sem ornare id.
+\\
+\\
+\textbf{Palavras-chave}: PALAVRA-CHAVE 1, PALAVRA-CHAVE 2, PALAVRA-CHAVE 3.  
+
+\newpage
+
+\section{Introdução}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at vehicula nisl, at pulvinar elit. Morbi et ligula et urna hendrerit venenatis vel tempus augue. Fusce vestibulum et leo vel pulvinar. Sed nulla quam, aliquam nec nunc ac, malesuada vehicula lacus. Integer ac diam quis lacus tempor viverra. Pellentesque pulvinar metus non risus lacinia, et luctus quam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin rhoncus dui, vel ullamcorper elit hendrerit eget. Proin ac leo erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dolor metus. Nam sagittis purus nisi, et euismod lectus vestibulum nec. Donec condimentum purus at elit convallis, a viverra massa pretium. Sed lobortis metus mi, id finibus risus fringilla id.
+
+\begin{figure}[!htb]
+    \centering
+    \caption{Título da imagem.}
+    \includegraphics[width=0.5\linewidth]{imagens/image.png}\\
+    {\footnotesize Fonte: fonte da imagem}
+    \label{fig:enter-label}
+\end{figure}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices, eros vel cursus laoreet, enim nisl venenatis erat, et lacinia velit libero molestie sapien. Curabitur lobortis, purus nec blandit fringilla, odio arcu scelerisque nisl, eget ornare neque erat ut sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec gravida mauris eu pretium venenatis. Suspendisse sodales ullamcorper tortor, sit amet gravida ligula efficitur nec. Proin nibh ante, porttitor sed leo a, vehicula lacinia dolor. In condimentum nulla porttitor, molestie dui in, rhoncus leo. Curabitur dignissim, risus nec consequat euismod, velit felis dictum massa, sit amet faucibus tellus enim id arcu. Aenean gravida id magna sit amet eleifend.
+\newpage
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\section{Referencial Teórico}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit \cite{ipsum2021article}.
+Duis quis dui massa. Donec a malesuada ex. Etiam quam justo, imperdiet quis elit ut,
+tincidunt luctus ligula \cite{lorem2020book}. 
+Etiam mattis sapien ligula. In tempor posuere libero, ut porttitor elit convallis sed.
+Etiam aliquet, nisi eu venenatis facilisis, erat lacus rutrum tortor, sit amet vulputate enim nisi a nulla.
+Pellentesque egestas condimentum turpis, in elementum lectus interdum sit amet \cite{dolor2022conf}.
+
+\begin{figure}[!htb]
+    \centering
+    \caption{Título da imagem.}
+    \includegraphics[width=0.5\linewidth]{imagens/image.png}\\
+    {\footnotesize Fonte: fonte da imagem \cite{amet2023web}}
+    \label{fig:enter-label}
+\end{figure}
+
+Maecenas lobortis pellentesque sapien tincidunt ullamcorper \cite{sint2024thesis}.
+Cras pretium, orci et congue dictum, arcu ante cursus nulla, et scelerisque erat nisi id tortor.
+Integer dui dolor, faucibus in ultrices sed, varius vel nibh.
+Sed porta risus orci. Nam sed neque id augue finibus malesuada vitae a mauris.
+Quisque molestie neque in arcu congue accumsan sed in felis.
+Morbi porttitor augue eget erat fringilla sagittis.
+Sed pharetra lobortis porttitor.
+Quisque elementum scelerisque odio, at tristique tellus tristique vitae.
+Aenean quis nisl tellus.
+Nulla facilisi.
+Phasellus pretium molestie ullamcorper.
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\section{Objetivos}
+\subsection{Objetivo Geral}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in placerat tortor, non tincidunt massa. Suspendisse pharetra odio nunc, sit amet tristique lectus commodo volutpat. Nullam sagittis quis tellus sed tristique. Mauris vehicula diam id dignissim semper. Nam turpis tortor, elementum et tortor non, eleifend condimentum ante. Donec laoreet mi elementum nisi blandit, vel pretium orci consequat. Nunc convallis placerat lectus et egestas. Integer dignissim quis justo vel consectetur.
+
+\subsection{Objetivos Específicos}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in placerat tortor, non tincidunt massa. Suspendisse pharetra odio nunc, sit amet tristique lectus commodo volutpat. Nullam sagittis quis tellus sed tristique. Mauris vehicula diam id dignissim semper. Nam turpis tortor, elementum et tortor non, eleifend condimentum ante. Donec laoreet mi elementum nisi blandit, vel pretium orci consequat. Nunc convallis placerat lectus et egestas. Integer dignissim quis justo vel consectetur.
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\section{Materiais e Métodos}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in placerat tortor, non tincidunt massa. Suspendisse pharetra odio nunc, sit amet tristique lectus commodo volutpat. Nullam sagittis quis tellus sed tristique. Mauris vehicula diam id dignissim semper. Nam turpis tortor, elementum et tortor non, eleifend condimentum ante. Donec laoreet mi elementum nisi blandit, vel pretium orci consequat. Nunc convallis placerat lectus et egestas. Integer dignissim quis justo vel consectetur.
+
+\begin{figure}[!htb]
+    \centering
+    \caption{Título da imagem.}
+    \includegraphics[width=0.5\linewidth]{imagens/image.png}\\
+    {\footnotesize Fonte: fonte da imagem}
+    \label{fig:enter-label}
+\end{figure}
+\newpage
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\section{Resultados}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in placerat tortor, non tincidunt massa. Suspendisse pharetra odio nunc, sit amet tristique lectus commodo volutpat. Nullam sagittis quis tellus sed tristique. Mauris vehicula diam id dignissim semper. Nam turpis tortor, elementum et tortor non, eleifend condimentum ante. Donec laoreet mi elementum nisi blandit, vel pretium orci consequat. Nunc convallis placerat lectus et egestas. Integer dignissim quis justo vel consectetur.
+
+\begin{figure}[!htb]
+    \centering
+    \caption{Título da imagem.}
+    \includegraphics[width=0.5\linewidth]{imagens/image.png}\\
+    {\footnotesize Fonte: fonte da imagem}
+    \label{fig:enter-label}
+\end{figure}
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\newpage
+\section{Considerações Finais}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in placerat tortor, non tincidunt massa. Suspendisse pharetra odio nunc, sit amet tristique lectus commodo volutpat. Nullam sagittis quis tellus sed tristique. Mauris vehicula diam id dignissim semper. Nam turpis tortor, elementum et tortor non, eleifend condimentum ante. Donec laoreet mi elementum nisi blandit, vel pretium orci consequat. Nunc convallis placerat lectus et egestas. Integer dignissim quis justo vel consectetur.
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\newpage
+\addcontentsline{toc}{section}{Referências}
+
+\bibliographystyle{abntex2-alf}
+\bibliography{referencias}
+
+
+\newpage
+\end{document}
